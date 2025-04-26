@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بطاقات الموظفين</title>
+  <link rel="stylesheet" href="style.css"> <!-- رابط إلى ملف CSS -->
+</head>
+<body>
+    <div class="container" id="employeeContainer">
+        <!-- بطاقات الموظفين ستُملأ بواسطة JavaScript -->
+      </div>
+    
+      <script src="script.js"></script>
+  <!-- الشريط الجانبي -->
+  <div class="sidebar"> 
+
+      <!-- أضف المزيد من المشاكل هنا -->
+    </ul>
+  </div>
+
+  <!-- المحتوى الرئيسي -->
+  <div class="main-content">
+    <input type="text" id="search" placeholder="ابحث بالتخصص أو المشكلة...">
+    <div class="employee-cards">
+      <!-- بطاقة الموظف -->
+      <div class="employee-card">
+        <img src="o.png" alt="موظف 1">
+        <h4>اسم الموظف</h4>
+        <p>التخصص: دعم فني</p>
+        <span class="problem">مشكلة في الاتصال بالشبكة</span> <!-- إضافة هذا العنصر للمشكلة -->
+      </div>
+      <!-- أضف المزيد من البطاقات هنا -->
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- رابط إلى ملف JavaScript -->
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بطاقات الموظفين</title>
+  <link rel="stylesheet" href="style.css"> <!-- رابط إلى ملف CSS -->
+</head>
+<body>
+
+  <!-- الشريط الجانبي -->
+  <div class="sidebar">
+    <h3>أنواع المشاكل</h3>
+    <ul>
+      <li><a href="#" onclick="filterByProblem('عطل فني')">عطل فني</a></li>
+      <li><a href="#" onclick="filterByProblem('انقطاع الاتصال بالشبكة')">انقطاع الاتصال بالشبكة</a></li>
+      <li><a href="#" onclick="filterByProblem('مشكلة في VPN')">مشكلة في VPN</a></li>
+      <li><a href="#" onclick="filterByProblem('بطء الاتصال بالإنترنت')">بطء الاتصال بالإنترنت</a></li>
+      <li><a href="#" onclick="filterByProblem('مشكلة تحديث البرامج')">مشكلة تحديث البرامج</a></li>
+    </ul>
+  </div>
+
+  <!-- المحتوى الرئيسي -->
+  <div class="main-content">
+    <input type="text" id="search" placeholder="ابحث بالمشكلة أو التخصص...">
+    <div class="employee-cards">
+      <!-- بطاقة الموظف -->
+      <div class="employee-card" data-specialty="دعم فني" data-problem="عطل فني">
+        <img src="employee1.jpg" alt="موظف 1">
+        <h4>موظف 1</h4>
+        <p>التخصص: دعم فني</p>
+        <span class="problem">عطل فني</span>
+      </div>
+
+      <!-- بطاقة موظف آخر -->
+      <div class="employee-card" data-specialty="شبكات" data-problem="انقطاع الاتصال بالشبكة">
+        <img src="employee2.jpg" alt="موظف 2">
+        <h4>موظف 2</h4>
+        <p>التخصص: شبكات</p>
+        <span class="problem">انقطاع الاتصال بالشبكة</span>
+      </div>
+
+      <!-- أضف المزيد من البطاقات هنا -->
+
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- رابط إلى ملف JavaScript -->
+</body>
+</html>
